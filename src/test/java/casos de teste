@@ -1,0 +1,15 @@
+#language:pt
+@funcionais
+Funcionalidade: Carrinho de Compras
+	Sendo um usuário do site
+	Quero pesquisar pelo produto desejado
+	Para incluir no carrinho de compras
+
+
+  Cenário: Incluir Produto no carrinho informando cep de destino válido
+    Dado que pesquiso pelo produto "console ps4"
+    Quando seleciono o produto "console ps4"
+    E informo o cep de destino com cep "51230360"
+    E realizo a inclusao do produto no carrinho
+    Então tenho o produto "console ps4" é incluido no carrinho para compra
+
